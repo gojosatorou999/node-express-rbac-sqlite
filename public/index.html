@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RBAC - Role-Based Access Control</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>RBAC System</h1>
+      <p>Secure Role-Based Access demo with JWT and SQLite</p>
+    </header>
+
+    <div class="card-grid">
+      <!-- Auth Section -->
+      <section class="card auth-card">
+        <h2>Auth & Registration</h2>
+        <div class="form-group">
+          <input type="text" id="username" placeholder="Username">
+          <input type="password" id="password" placeholder="Password">
+          <select id="role">
+            <option value="user">User Role</option>
+            <option value="admin">Admin Role</option>
+          </select>
+          <div class="btn-group">
+            <button onclick="register()">Register</button>
+            <button onclick="login()" class="btn-primary">Login</button>
+          </div>
+        </div>
+        <div id="auth-status" class="status-msg"></div>
+      </section>
+
+      <!-- Testing Section -->
+      <section class="card test-card">
+        <h2>Protected Routes</h2>
+        <div class="btn-grid">
+          <button onclick="testRoute('/api/public')">Public Route</button>
+          <button onclick="testRoute('/api/user-dashboard')" class="btn-user">User Dashboard</button>
+          <button onclick="testRoute('/api/admin-panel')" class="btn-admin">Admin Panel</button>
+        </div>
+        <div id="test-result" class="result-box">
+          <p class="placeholder">Click a button to test route access...</p>
+        </div>
+      </section>
+    </div>
+
+    <!-- Token Section -->
+    <section class="card token-card">
+      <h3>Active Token</h3>
+      <pre id="token-display">None</pre>
+      <button onclick="logout()" id="logout-btn" style="display: none;">Logout</button>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
