@@ -17,7 +17,7 @@ The application uses **JWT (JSON Web Token)** for authentication and carrying ro
 - **RBAC Middleware:** Restricts route access based on user roles.
 - **SQLite DB:** A simple file-based database to store user authentication and role data.
 
-## API Endpoints 
+## API Endpoints :
 
 - **POST /auth/register:** Creates a new user with a specified role (`admin`/`user`).
 - **POST /auth/login:** Authenticates and returns a JWT token.
