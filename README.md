@@ -25,7 +25,7 @@ The application uses **JWT (JSON Web Token)** for authentication and carrying ro
 - **GET /api/user-dashboard:** Accessible to users with 'user' or 'admin' roles.
 - **GET /api/admin-panel:** Only accessible to users with the 'admin' role.
 
-#####Getting Started
+####Getting Started
 
 1. **Install Dependencies:** `npm install`
 2. **Run Server:** `npm run dev` (starts with nodemon) or `node server.js`
