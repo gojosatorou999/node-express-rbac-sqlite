@@ -10,7 +10,7 @@ The application uses **JWT (JSON Web Token)** for authentication and carrying ro
 2. **Access Control:** A middleware `authorizeRoles` guards protected routes. It checks the role stored in the decoded JWT and compares it against the required roles for that route.
 3. **Database Storage:** User roles are stored in the SQLite database under a `role` column in the `users` table.
 
----->Key Features 
+----> Key Features 
 
 - **Password Hashing:** Uses `bcryptjs` to securely hash passwords before storing them.
 - **JWT Middleware:** Verifies the token provided in the `Authorization` header.
