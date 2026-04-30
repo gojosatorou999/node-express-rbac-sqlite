@@ -1,5 +1,5 @@
 # Role Based Access Control (RBAC) Implementation
-divali
+dival
 This project implements a basic backend with Role-Based Access Control using **Node.js, Express, JWT, and SQLite**. Users can register as either an 'admin' or a 'user' and access routes accordingly.
 
 ## Authorization Logic
