@@ -11,7 +11,7 @@ The application uses **JWT (JSON Web Token)** for authentication and carrying ro
 3. **Database Storage:** User roles are stored in the SQLite database under a `role` column in the `users` table.
   
 ## Key Features              
-    
+     
 - **Password Hashing:** Uses `bcryptjs` to securely hash passwords before storing them.
 - **JWT Middleware:** Verifies the token provided in the `Authorization` header.
 - **RBAC Middleware:** Restricts route access based on user roles.
