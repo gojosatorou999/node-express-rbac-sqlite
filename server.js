@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 3000;
 // Middleware
 app.use(express.json());
 app.use(cors());
-app.use(morgan('dev'));
+app.use(morgan('dev'));  
 
 // Static files for frontend
 app.use(express.static(path.join(__dirname, 'public')));
