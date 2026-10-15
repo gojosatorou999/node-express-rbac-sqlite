@@ -7,7 +7,7 @@ const adminController = require('../controllers/adminController');
 router.get('/public', (req, res) => {
   res.json({ message: 'Welcome! This is a public route.' });
 });
-
+  
 // User dashboard - accessible by both simple 'user' and 'admin' roles
 router.get('/user-dashboard', verifyToken, authorizeRoles('user', 'admin'), (req, res) => {
   res.json({ 
